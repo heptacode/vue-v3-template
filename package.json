@@ -1,0 +1,28 @@
+{
+  "name": "vue-v3-template",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build"
+  },
+  "dependencies": {
+    "axios": "latest",
+    "vue": "latest",
+    "vue-class-component": "latest",
+    "vue-router": "latest",
+    "vuex": "latest"
+  },
+  "devDependencies": {
+    "@mdi/js": "latest",
+    "@types/node": "latest",
+    "@types/prettier": "^2",
+    "@vitejs/plugin-vue": "latest",
+    "prettier": "latest",
+    "sass": "latest",
+    "typescript": "latest",
+    "vite": "latest",
+    "vue-tsc": "latest"
+  },
+  "packageManager": "yarn@3.2.0"
+}
