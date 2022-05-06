@@ -1,10 +1,10 @@
 # Vue 3 + TypeScript + Vite Template ⚡️
 
-![Yarn Berry](https://img.shields.io/badge/Yarn_Berry-282C34.svg?&style=for-the-badge&logo=yarn)
-![Vite](https://img.shields.io/badge/vite-282C34.svg?&style=for-the-badge&logo=vite)
-![TypeScript](https://img.shields.io/badge/TypeScript-282C34.svg?&style=for-the-badge&logo=typescript)
-![Vue 3](https://img.shields.io/badge/vue_3-282C34.svg?&style=for-the-badge&logo=vue.js)
-![SCSS](https://img.shields.io/badge/SCSS-282C34.svg?&style=for-the-badge&logo=sass)
+![Yarn Berry](https://img.shields.io/badge/Yarn_Berry-282C34.svg?style=for-the-badge&logo=yarn)
+![Vite](https://img.shields.io/badge/vite-282C34.svg?style=for-the-badge&logo=vite)
+![TypeScript](https://img.shields.io/badge/TypeScript-282C34.svg?style=for-the-badge&logo=typescript)
+![Vue 3](https://img.shields.io/badge/vue_3-282C34.svg?style=for-the-badge&logo=vue.js)
+![SCSS](https://img.shields.io/badge/SCSS-282C34.svg?style=for-the-badge&logo=sass)
 
 ## Installation
 
