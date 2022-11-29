@@ -484,6 +484,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vue/devtools-api@npm:^6.4.5":
+  version: 6.4.5
+  resolution: "@vue/devtools-api@npm:6.4.5"
+  checksum: 40c5adc8788cb283972ce09ba7ce105fa894f4decec9168829cc8e6211462763402442e6c31be76f9da62b0e74ae724971b924571367b4ac89b94dc6894e2d07
+  languageName: node
+  linkType: hard
+
 "@vue/reactivity-transform@npm:3.2.45":
   version: 3.2.45
   resolution: "@vue/reactivity-transform@npm:3.2.45"
@@ -3129,6 +3136,34 @@ __metadata:
   languageName: node
   linkType: hard
 
+"pinia-plugin-persistedstate@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "pinia-plugin-persistedstate@npm:3.0.1"
+  peerDependencies:
+    pinia: ^2.0.0
+  checksum: 667fe3f0fb38659817cb2ca92b653d48c95d223e873e63a2daa7e6c12fe2330975fbc7baa765e30366488030197e26eeec1576befa315140764cfdbef8367df3
+  languageName: node
+  linkType: hard
+
+"pinia@npm:^2.0.27":
+  version: 2.0.27
+  resolution: "pinia@npm:2.0.27"
+  dependencies:
+    "@vue/devtools-api": ^6.4.5
+    vue-demi: "*"
+  peerDependencies:
+    "@vue/composition-api": ^1.4.0
+    typescript: ">=4.4.4"
+    vue: ^2.6.14 || ^3.2.0
+  peerDependenciesMeta:
+    "@vue/composition-api":
+      optional: true
+    typescript:
+      optional: true
+  checksum: 29c862ea4304cdfeae385cbd2ab08100809aa9a79c147c4cb4085215601c0323e0ca664cea6abcaa0298e7ea53865117b6950ebb59224347fbc1683dbe956ac8
+  languageName: node
+  linkType: hard
+
 "postcss-media-query-parser@npm:^0.2.3":
   version: 0.2.3
   resolution: "postcss-media-query-parser@npm:0.2.3"
@@ -4177,6 +4212,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"vue-demi@npm:*":
+  version: 0.13.11
+  resolution: "vue-demi@npm:0.13.11"
+  peerDependencies:
+    "@vue/composition-api": ^1.0.0-rc.1
+    vue: ^3.0.0-0 || ^2.6.0
+  peerDependenciesMeta:
+    "@vue/composition-api":
+      optional: true
+  bin:
+    vue-demi-fix: bin/vue-demi-fix.js
+    vue-demi-switch: bin/vue-demi-switch.js
+  checksum: 0fbe9bf8ab7fe498ffa2bbd0cfc8f6f43a6bbaa5eda3e20ef1b70dca7c8b0ddb216a7ff2f632b694fe0735805638975abb441c621ec0bd2e6d4656353f316c15
+  languageName: node
+  linkType: hard
+
 "vue-template-compiler@npm:^2.7.10":
   version: 2.7.14
   resolution: "vue-template-compiler@npm:2.7.14"
@@ -4214,6 +4265,8 @@ __metadata:
     eslint-import-resolver-typescript: ^3.5.2
     eslint-plugin-import: ^2.26.0
     eslint-plugin-prettier: ^4.2.1
+    pinia: ^2.0.27
+    pinia-plugin-persistedstate: ^3.0.1
     prettier: ^2.8.0
     stylelint: ^14.15.0
     stylelint-config-prettier-scss: ^0.0.1
@@ -4222,12 +4275,12 @@ __metadata:
     stylelint-order: ^5.0.0
     typescript: ^4.9.3
     vite: ^3.2.3
-    vue: ^3.2.41
+    vue: ^3.2.45
     vue-tsc: ^1.0.9
   languageName: unknown
   linkType: soft
 
-"vue@npm:^3.2.41":
+"vue@npm:^3.2.45":
   version: 3.2.45
   resolution: "vue@npm:3.2.45"
   dependencies:
