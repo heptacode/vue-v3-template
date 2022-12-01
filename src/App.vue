@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import RouterTransition from '@/components/transitions/RouterTransition.vue';
 import { useGlobalStore } from '@/stores/global.js';
+import RouterTransition from '@/components/transitions/RouterTransition.vue';
 
 const globalStore = useGlobalStore();
 </script>
@@ -31,14 +31,11 @@ const globalStore = useGlobalStore();
     width: 100%;
     min-height: 100vh;
 
-    background-color: var(--color-bg);
-
     &__item {
-      padding: 60px 50px;
-
       width: 100%;
       max-width: 1200px;
       min-height: 100%;
+      padding: 60px 50px;
     }
   }
 }

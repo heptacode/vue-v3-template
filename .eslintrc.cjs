@@ -1,8 +1,18 @@
 module.exports = {
   root: true,
-  parser: '@typescript-eslint/parser',
-  extends: ['eslint-config-prettier'],
-  plugins: ['@typescript-eslint', 'import', 'prettier'],
+  parser: 'vue-eslint-parser',
+  parserOptions: {
+    ecmaVersion: 'latest',
+    parser: '@typescript-eslint/parser',
+    sourceType: 'module',
+  },
+  extends: [
+    'plugin:prettier/recommended',
+    'plugin:vue/vue3-recommended',
+    '@vue/eslint-config-typescript/recommended',
+    'prettier',
+  ],
+  plugins: ['@typescript-eslint', 'import', 'vue'],
   settings: { 'import/resolver': { typescript: {} } },
   rules: {
     '@typescript-eslint/no-unused-vars': ['error', { ignoreRestSiblings: true }],
@@ -25,5 +35,7 @@ module.exports = {
     'prefer-const': 'error',
     'prettier/prettier': 'error',
     semi: 'off',
+    'vue/multi-word-component-names': 'off',
   },
+  ignorePatterns: ['.vscode', 'dist', 'node_modules'],
 };
