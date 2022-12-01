@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import {computed }from "vue";
+import { computed } from 'vue';
 
 interface Props {
   list: boolean;
   flow: boolean;
-  align: string
+  align: string;
   justify: string;
 }
 const props = withDefaults(defineProps<Props>(), {
@@ -14,22 +14,22 @@ const props = withDefaults(defineProps<Props>(), {
   justify: '',
 });
 
-const getStyle = computed(()=>{
+const getStyle = computed(() => {
   const styles: string[] = [];
-    if (props.list) {
-      styles.push(`padding: 16px 24px;`);
-    }
-    if (props.flow) {
-      styles.push(`flex-flow: ${props.flow};`);
-    }
-    if (props.align) {
-      styles.push(`align-items: ${props.align};`);
-    }
-    if (props.justify) {
-      styles.push(`justify-content: ${props.justify};`);
-    }
-    return styles.join('');
-})
+  if (props.list) {
+    styles.push(`padding: 16px 24px;`);
+  }
+  if (props.flow) {
+    styles.push(`flex-flow: ${props.flow};`);
+  }
+  if (props.align) {
+    styles.push(`align-items: ${props.align};`);
+  }
+  if (props.justify) {
+    styles.push(`justify-content: ${props.justify};`);
+  }
+  return styles.join('');
+});
 </script>
 
 <template>
