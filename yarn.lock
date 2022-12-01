@@ -132,6 +132,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@iconify/types@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@iconify/types@npm:2.0.0"
+  checksum: 029f58542c160e9d4a746869cf2e475b603424d3adf3994c5cc8d0406c47e6e04a3b898b2707840c1c5b9bd5563a1660a34b110d89fce43923baca5222f4e597
+  languageName: node
+  linkType: hard
+
+"@iconify/vue@npm:^4.0.1":
+  version: 4.0.1
+  resolution: "@iconify/vue@npm:4.0.1"
+  dependencies:
+    "@iconify/types": ^2.0.0
+  peerDependencies:
+    vue: ">=3"
+  checksum: f711d3140cc74d21b29fff4ec91008cbda3fae8531d98a64698f72febd3df0f75c904e6f0132d766bab6718f2bd285fff74d685f29e35dfb575028dc80438c3b
+  languageName: node
+  linkType: hard
+
 "@nodelib/fs.scandir@npm:2.1.5":
   version: 2.1.5
   resolution: "@nodelib/fs.scandir@npm:2.1.5"
@@ -4479,6 +4497,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "vue-v3-template@workspace:."
   dependencies:
+    "@iconify/vue": ^4.0.1
     "@types/node": ^18.11.9
     "@typescript-eslint/eslint-plugin": ^5.45.0
     "@typescript-eslint/parser": ^5.45.0
