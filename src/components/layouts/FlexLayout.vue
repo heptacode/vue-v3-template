@@ -1,34 +1,26 @@
 <script setup lang="ts">
-import { computed } from 'vue';
+import { computed, StyleValue } from 'vue';
 
 interface Props {
   list: boolean;
-  flow: boolean;
+  flow: string;
   align: string;
   justify: string;
 }
 const props = withDefaults(defineProps<Props>(), {
   list: false,
-  flow: false,
+  flow: '',
   align: '',
   justify: '',
 });
 
 const getStyle = computed(() => {
-  const styles: string[] = [];
-  if (props.list) {
-    styles.push(`padding: 16px 24px;`);
-  }
-  if (props.flow) {
-    styles.push(`flex-flow: ${props.flow};`);
-  }
-  if (props.align) {
-    styles.push(`align-items: ${props.align};`);
-  }
-  if (props.justify) {
-    styles.push(`justify-content: ${props.justify};`);
-  }
-  return styles.join('');
+  return {
+    padding: props.list ? '16px 24px' : 'inherit',
+    flexFlow: props.flow,
+    alignItems: props.align,
+    justifyContent: props.justify,
+  } satisfies StyleValue;
 });
 </script>
 
