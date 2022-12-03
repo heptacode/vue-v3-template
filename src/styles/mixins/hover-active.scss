@@ -1,0 +1,9 @@
+@mixin hover-active {
+  &:hover {
+    background-color: var(--color-hover);
+  }
+
+  &:active {
+    background-color: var(--color-active);
+  }
+}

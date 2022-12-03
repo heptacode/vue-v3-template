@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { useGlobalStore } from '@/stores/global.js';
 import RouterTransition from '@/components/transitions/RouterTransition.vue';
+import { useGlobalStore } from '@/stores/global.js';
 
 const globalStore = useGlobalStore();
 </script>

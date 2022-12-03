@@ -1,11 +1,10 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { router } from '@/router.js';
+</script>
 
 <template>
-  <div class="home"></div>
+  <div class="home">
+    <h1>Welcome Home!</h1>
+    <button @click="router.push('/info')">Info</button>
+  </div>
 </template>
-
-<style lang="scss" scoped>
-.home {
-  position: absolute;
-}
-</style>

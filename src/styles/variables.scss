@@ -1,0 +1,20 @@
+:root {
+  --color-input: var(--color-white);
+  --color-border: #d6d6d6;
+  --color-text: #2c3e50;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-selection: rgba(39, 49, 66, 0.2);
+  --color-hover: rgba(0, 0, 0, 0.031);
+  --color-active: rgba(0, 0, 0, 0.1);
+  --color-disabled: #a8abb0;
+}
+
+.darkTheme {
+  --color-input: #292a2c;
+  --color-border: #3e4042;
+  --color-text: #fff;
+  --color-selection: #9cb2cd;
+  --color-hover: rgba(255, 255, 255, 0.1);
+  --color-active: rgba(255, 255, 255, 0.25);
+}

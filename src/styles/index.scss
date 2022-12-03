@@ -1,81 +1,146 @@
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
+@font-face {
+  font-family: 'NanumSquare';
+  font-weight: 300;
+  src: url('/fonts/NanumSquareL.eot');
+  src: url('/fonts/NanumSquareL.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/NanumSquareL.woff') format('woff'),
+    url('/fonts/NanumSquareL.ttf') format('truetype');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'NanumSquare';
   font-weight: 400;
-  line-height: 24px;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  color-scheme: light dark;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  src: url('/fonts/NanumSquareR.eot');
+  src: url('/fonts/NanumSquareR.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/NanumSquareR.woff') format('woff'),
+    url('/fonts/NanumSquareR.ttf') format('truetype');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'NanumSquare';
+  font-weight: 700;
+  src: url('/fonts/NanumSquareB.eot');
+  src: url('/fonts/NanumSquareB.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/NanumSquareB.woff') format('woff'),
+    url('/fonts/NanumSquareB.ttf') format('truetype');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'NanumSquare';
+  font-weight: 800;
+  src: url('/fonts/NanumSquareEB.eot');
+  src: url('/fonts/NanumSquareEB.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/NanumSquareEB.woff') format('woff'),
+    url('/fonts/NanumSquareEB.ttf') format('truetype');
+  font-display: swap;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
 }
 
-body {
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+::-webkit-scrollbar-track {
+  background-color: rgba(#000, 0.15);
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(#000, 0.2);
+  border-radius: 100px;
+}
+
+::selection {
+  background-color: var(--color-selection);
+}
+
+* {
+  padding: 0;
   margin: 0;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  padding: 0.6em 1.2em;
-  font-family: inherit;
-  font-size: 1em;
-  font-weight: 500;
-  cursor: pointer;
-  background-color: #1a1a1a;
-  border: 1px solid transparent;
-  border-radius: 8px;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-.card {
-  padding: 2em;
+  box-sizing: border-box;
+  font-family: 'NanumSqaure', sans-serif;
+  color: var(--color-text);
+  transition-duration: 0.2s;
 }
 
 #app {
-  max-width: 1280px;
-  padding: 2rem;
-  margin: 0 auto;
-  text-align: center;
+  width: 100%;
+  min-height: 100%;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  word-break: keep-all;
+
+  overflow-x: hidden;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  line-height: 0;
+  text-decoration: none;
+
+  @include hover-active;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+  border-radius: 1000px;
+  outline: none;
+  background: none;
+
+  padding: 12px 55px;
+
+  font-size: 16px;
+  font-weight: bold;
+
+  box-shadow: 0 2px 5px rgba(#000, 0.3);
+
+  cursor: pointer;
+  transition-duration: 0.1s;
+
+  @include hover-active;
+
+  &.circle {
+    min-width: 48px;
+    width: 48px;
+    height: 48px;
+
+    padding: 0;
+
+    border-radius: 50%;
   }
-  a:hover {
-    color: #747bff;
+
+  &.flat {
+    box-shadow: none;
   }
-  button {
-    background-color: #f9f9f9;
+
+  &:disabled {
+    pointer-events: none;
+    cursor: not-allowed;
   }
+}
+
+input {
+  padding: 10px;
+
+  border: none;
+  border-radius: 30px;
+  background: none;
+  background-color: var(--color-input);
+  outline: none;
+
+  color: inherit;
+  font-size: 1.3em;
+}
+
+.iconify {
+  color: inherit;
+  font-size: 24px;
 }

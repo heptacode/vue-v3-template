@@ -7,6 +7,11 @@ export const routes: RouteRecordRaw[] = [
     component: () => import('@/pages/Home.vue'),
   },
   {
+    path: '/info',
+    name: '',
+    component: () => import('@/pages/Info.vue'),
+  },
+  {
     path: '/:pathMatch(.*)*',
     redirect: '/',
   },
