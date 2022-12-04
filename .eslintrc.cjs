@@ -15,6 +15,14 @@ module.exports = {
   plugins: ['@typescript-eslint', 'import', 'vue'],
   settings: { 'import/resolver': { typescript: {} } },
   rules: {
+    '@typescript-eslint/ban-types': [
+      'error',
+      {
+        types: {
+          '{}': false,
+        },
+      },
+    ],
     '@typescript-eslint/no-unused-vars': ['error', { ignoreRestSiblings: true }],
     '@typescript-eslint/no-non-null-assertion': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
@@ -30,11 +38,7 @@ module.exports = {
       },
     ],
     'no-implicit-coercion': 'error',
-    'no-undef': 'off',
-    'no-var': 'error',
-    'prefer-const': 'error',
     'prettier/prettier': 'error',
-    semi: 'off',
     'vue/multi-word-component-names': 'off',
   },
   ignorePatterns: ['.vscode', 'dist', 'node_modules'],
