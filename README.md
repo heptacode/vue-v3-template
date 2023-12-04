@@ -8,23 +8,20 @@
 ![StyleLint](https://img.shields.io/badge/StyleLint-282C34.svg?style=for-the-badge&logo=stylelint)
 ![Vitest](https://img.shields.io/badge/Vitest-282C34.svg?style=for-the-badge&logo=vitest)
 ![Iconify](https://img.shields.io/badge/Iconify-282C34.svg?style=for-the-badge&logo=iconify)
-![Yarn Berry](https://img.shields.io/badge/Yarn_Berry-282C34.svg?style=for-the-badge&logo=yarn)
+![PNPM](https://img.shields.io/badge/PNPM-282C34.svg?style=for-the-badge&logo=pnpm)
 
 ## Installation
 
 1. Install recommended VSCode extensions (.vscode/extensions.json)
-2. `yarn`
-3. Press <kbd>Ctrl(Cmd)</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> in a TypeScript file
-4. Choose "Select TypeScript Version"
-5. Pick "Use Workspace Version"
+2. `pnpm i`
 
 ## Run a Live Development Server
 
-- `yarn dev`
+- `pnpm dev`
 
 ## Build Project
 
-- `yarn build`
+- `pnpm build`
 
 ## Contributing
 

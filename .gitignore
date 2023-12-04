@@ -1,8 +1,6 @@
 # Logs
 logs
 *.log
-yarn-debug.log*
-yarn-error.log*
 
 # Project
 dist
@@ -11,13 +9,6 @@ dist
 .*cache
 
 # Packages
-.pnp.*
-.yarn/*
-!.yarn/patches
-!.yarn/releases
-!.yarn/plugins
-!.yarn/sdks
-!.yarn/versions
 node_modules
 
 # Editor directories and files
